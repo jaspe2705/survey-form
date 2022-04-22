@@ -5,9 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap" rel="stylesheet">
     <title>Survey Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="container__form">
+        <header class="header">
+            <h1 id="title" class="header__title">Encuesta de calidad y atención al cliente</h1>
+            <p id="description">Muchas gracias por tomarse el tiempo para realizar esta encuesta</p>
+        </header>
+        <form id="survey-form">
+            
+            <div class="form__group1">
+                <label id="name-label" for="name">Nombre y Apellido</label>
+                <input type="text" name="name" id="name" class="form__control" 
+                placeholder="Ingrese nombre y apellido" required>
+            </div>
+
+            <div class="form__group1">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form__control"
+                placeholder="Ingrese su email" required>
+            </div>
+
+            <div class="form__group1">
+                <label id="number-label" for="number">Edad</label>
+                <input type="number" name="age" id="number" min="18" max="75"
+                class="form__control" placeholder="Edad" required>
+            </div>
+
+            <div class="form__group1">
+                <p>Cual es su nivel de educación alcanzado</p>
+                <select id="dropdown" name="educacion" class="form-control" required>
+                    <option disabled selected value>Nivel alcanzado</option>
+                    <option value="primario-incompleto">Primario Incompleto</option>
+                    <option value="primario-completo">Primario Completo</option>
+                    <option value="secundario-incompleto">Secundario Incompleto</option>
+                    <option value="secundario-completo">Secundario Completo</option>
+                    <option value="universitario-incompleto">Universitario Incompleto</option>
+                    <option value="universitario-completo">Universitario Completo</option>   
+                </select>
+            </div>
+
+            <div class="form__group">
+                <p>Recomendaría nuestros servicios:</p>
+                <input type="radio" id="definitivamente" name="user-recomended" value="definitivamente" checked>
+                <label for="definitivamente">Definitivamente</label>
+                <input type="radio" id="tal-vez" name="user-recomended" value="tal-vez" checked>
+                <label for="-tal-vez">Tal vez</label>
+                <input type="radio" id="no" name="user-recomended" value="no" checked>
+                <label for="no">No</label>
+            </div>
+
+            <div class="form__group">
+                <p>A que lugar le gustaría viajar:</p>
+                <select id="dropdown" name="educacion" class="form-control" required>
+                    <option disabled selected value>Ciudad</option>
+                    <option value="miami">Miami</option>
+                    <option value="new-york">New York</option>
+                    <option value="orlando">Orlando</option>
+                    <option value="las-vegas">Las Vegas</option>
+                    <option value="san-francisco">San Francisco</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <p>Que servicios desea contratar:</p>
+                <input type="checkbox" id="pasajes-aereos" name="pasajes-aereos" value="Avion">
+                <label for="pasajes-aereos">Avión</label>
+                <input type="checkbox" id="hotel" name="hotel" value="Hotel">
+                <label for="hotel>Hotel">Hotel</label>
+                <input type="checkbox" id="excursion" name="excursion" value="Excursion">
+                <label for="excursion">Excursiones</label>
+                <input type="checkbox" id="seguro-medico" name="seguro-medico" value="Seguro">
+                <label for="seguro-medico">Seguro Médico</label>
+            </div>
+
+            <div class="form__group">
+                <p>Comentario:</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Ingrese su comentario aqui..."></textarea>
+            </div>
+
+            <div class="form__group">
+                <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </div>
+
+
+        </form>
+            
+        </form>
+    </div>
+    
+
+    </div>
+
     
 
 
